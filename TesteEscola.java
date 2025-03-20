@@ -1,13 +1,26 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package exerciciosgetterssetters.escola;
 
-/**
- *
- * @author vinic
- */
+ 
 public class TesteEscola {
-    
+     
+  public static void main(String[] args) {
+        Escola escola = new Escola("Escola Gladis Rita Bratenbach", "Avenida Lúcio Bittencourt, 123");
+
+        // Exibindo dados
+        System.out.println("Nome da Escola: " + escola.getNome());
+        System.out.println("Endereço: " + escola.getEndereco());
+
+        // Modificando os dados
+        escola.setNome("Colégio Lourdes Fontoura");
+        escola.setEndereco("Avenida Brasil, 456");
+
+        // Exibindo dados modificados
+        System.out.println("Dados atualizados:"); 
+        System.out.println("Nome da Escola: " + escola.getNome());
+        System.out.println("Endereço: " + escola.getEndereco());
+    }
 }
+
+
+    
